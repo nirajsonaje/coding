@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+---------------------------------------
+<script>
+
+document.getElementById("demo3").innerHTML = "My First JavaScript";
+
+function myFunction() {
+  document.getElementById("demo4").innerHTML = "Paragraph changed.";
+document.write(5 + 6);
+
+}
+
+
+</script>
+<script>
+window.alert("HELLO");
+</script>
+
+
+-------------------------------------------------------------------------------------------------------------------
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+
+<p id="demo1">JavaScript can change the style of an HTML element.</p>
+<button type="button" onclick="document.getElementById('demo1').style.fontSize='35px'">Click Me!</button>
+
+<p id="demo2">JavaScript can hide HTML elements.</p>
+<button type="button" onclick="document.getElementById('demo2').style.display='none'">Click Me!</button>
+
+<p id="demo3"></p>
+
+<p id="demo4">A Paragraph.</p>
+<button type="button" onclick="myFunction()">Try it</button>
+
+<BR>
+<button type="button" onclick="document.write(5 + 6)">document.write() </button>
+
+<h2>The window.print() Method</h2>
+<p>Click the button to print the current page.</p>
+<button onclick="window.print()">Print this page</button>
+
+
+
+
+
+<p id="demo6"></p>
+<script>
+let a, b, c;
+a = 5;
+b = 6;
+c = a + b;
+document.getElementById("demo6").innerHTML = c;
+</script>
+
+
+
+<p>JavaScript code blocks are written between { and }</p>
+<button type="button" onclick="myFunction1()">Click Me!</button>
+<p id="demo7"></p>
+<p id="demo8"></p>
+<script>
+function myFunction1() {
+  document.getElementById("demo7").innerHTML = "Hello Dolly!";
+  document.getElementById("demo8").innerHTML = "How are you?";
+}
+</script>
+
+<h2>JavaScript</h2>
+<p>When adding a number and a string, JavaScript will treat the number as a string.</p>
+<p id="demo9"></p>
+<script>
+let x = 16 + "Volvo";
+document.getElementById("demo9").innerHTML = x;
+</script>
+
+
+<h2>JavaScript Functions</h2>
+<p>This example calls a function which performs a calculation, and returns the result:</p>
+<p id="demo10"></p>
+<script>
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+document.getElementById("demo10").innerHTML = myFunction(4, 3);
+</script>
+
+
+
+
+<h2>JavaScript Objects</h2>
+<p id="demo11"></p>
+<script>
+// Create an object:
+const car = {type:"Fiat", model:"500", color:"white"};
+// Display some data from the object:
+document.getElementById("demo11").innerHTML = "The car type is " + car.type  ;
+</script>
+
+<hr>
+<h2>JavaScript Objects</h2>
+<p id="demo12"></p>
+<script>
+// Create an object:
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  age: 50,
+  eyeColor: "blue"
+};
+// Display some data from the object:
+document.getElementById("demo12").innerHTML =
+person.firstName + " is " + person.age + " years old.";
+</script>
+
+</body>
+</html> 
